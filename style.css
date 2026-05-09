@@ -1,0 +1,131 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: 
+    border-box; 
+}
+body { 
+    font-family: sans-serif; 
+    background: #f0f0f0; 
+    color: #000000; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    padding-top: 60px; 
+}
+.container { 
+    width: 100%; 
+    max-width: 520px; 
+    padding: 24px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+h1 { 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 24px; 
+    color: #459ce9; 
+}
+.input-row { 
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 16px; 
+}
+input[type="text"] {
+    flex: 1; 
+    padding: 12px 16px; 
+    border: 2px solid #d7dff6; 
+    border-radius: 8px; 
+    background: #c1c9de; 
+    color: #000000; 
+    font-size: 1rem; 
+    outline: none; 
+    transition: border .2s; 
+}
+input[type="text"]:focus {
+    border-color: #459ce9; 
+}
+.btn-add { 
+    padding: 12px 20px; 
+    background: #459ce9; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background .2s; 
+}
+.btn-add:hover { 
+    background: #3653c7; 
+}
+.filters { 
+    display: flex; 
+    gap: 8px; 
+    margin-bottom: 16px; 
+}
+.filters button { 
+    padding: 8px 16px; 
+    border: 1px solid #0f3460; 
+    background: transparent; 
+    color: #aaa; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-size: .85rem; 
+    transition: all .2s; 
+}
+.filters button.active { 
+    background: #0f3460; 
+    color: #fff; 
+    border-color: #0f3460; 
+}
+ul { 
+    list-style: none; 
+}
+li { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    padding: 12px 16px; 
+    background: #c1c9de; 
+    border-radius: 8px; 
+    margin-bottom: 8px; 
+    transition: all .2s; 
+}
+li.completed span { 
+    text-decoration: line-through; 
+    opacity: .45; 
+}
+li input[type="checkbox"] { 
+    width: 18px; 
+    height: 18px; 
+    accent-color: #459ce9; 
+    cursor: pointer; 
+}
+li span { 
+    flex: 1; 
+    font-size: .95rem; 
+}
+.delete-btn { 
+    background: none; 
+    border: none; 
+    color: #459ce9; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    opacity: .6; 
+    transition: opacity .2s; 
+}
+.delete-btn:hover { 
+    opacity: 1; 
+}
+.info { 
+    text-align: center; 
+    margin-top: 16px; 
+    font-size: .85rem; 
+    color: #888; 
+}
+.empty { 
+    text-align: center; 
+    padding: 32px; 
+    color: #555; 
+}
